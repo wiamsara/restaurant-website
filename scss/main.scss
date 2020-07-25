@@ -1,0 +1,452 @@
+@import "variable";
+@import "mixin";
+@import "extend";
+
+* {
+    box-sizing: border-box;
+}
+/*Start NavBar*/
+.grey {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.navbar {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    .navbar-brand {
+        border: 1px solid $primaryColor;
+        border-radius: 20px 0 20px 0;
+        padding: 10px;
+        span:first-of-type {
+            color: $primaryColor;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        span:last-of-type {
+            color: #ffffff;
+        }
+    }
+    .navbar-nav {
+        .active > .nav-link {
+            color: $primaryColor;
+        }
+        .nav-link{
+            font-size: 18px;
+            padding: 15px;
+            color: #ffffff;
+            &:hover {
+                color: $primaryColor;
+                @include Transition;
+            }
+        }
+    }
+}
+/*End NavBar*/
+/*Start slider*/
+.slider {
+    .overlay {
+        @extend .overlay;
+    }    .carousel-inner {
+        .carousel-item {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 30%;
+            text-align: center;
+            z-index: 3;
+            h1 {
+                font-size: 60px;
+                font-family: $fontFamily;
+                color:$primaryColor;
+                font-weight: bold;
+            }
+            p {
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+            button {
+                @extend .button;
+            }
+        }
+    }
+    .carousel-indicators {
+       li {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+       }
+       .active {
+        background-color: $primaryColor;
+       }
+    }
+}
+/*End slider*/
+/*Start about*/
+.about {
+    h2 {
+        @extend .h2;
+    }
+    hr {
+        @extend .hr;
+    }
+    i {
+        @extend .i;
+    }
+    .contenu {
+        margin: 50px auto;
+        p {
+            @extend .p;
+        }
+        ul {
+            li {
+                list-style: none;
+                padding-top: 0px;
+                @extend .p;
+                &::before {
+                    font-family: 'FontAwesome';
+                    content: "\f24d";
+                    color: $primaryColor;
+                    margin-right: 5px;
+                }
+            }
+        }
+        img {
+            height: 80%;
+            width: 80%;
+        }
+    }
+    .statistique {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url(../img/selective-focus-photography-of-beef-steak-with-sauce.jpg);
+        background-attachment: fixed;
+        padding: 70px 0;
+        position: relative;
+        .overlay {
+            @extend .overlay;
+        }
+        .item {
+            border-right: 2px solid #ffffff;
+            color: #ffffff;
+            z-index: 3;
+            padding-bottom: 40px;
+            &:last-child {
+                border-right: none;
+            }
+            sup {
+                top: -1.5em;
+            }
+        }
+        h3, span {
+            font-size: 40px;
+        }
+        h3 {
+            font-family: $fontFamily;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+}
+/*End about*/
+
+/*Start menu*/
+.menu {
+    h2 {
+        @extend .h2;
+    }
+    hr {
+        @extend .hr;
+    }
+    i {
+        @extend .i;
+    }
+    .nav-tabs {
+        padding-top: 40px;
+        border-bottom: 1px solid $primaryColor;
+        .nav-item {
+            padding-left: 30px;
+            .nav-link {
+                border: 1px solid $primaryColor;
+                border-bottom: none;
+                color: #ffffff;
+                background-color: $primaryColor;
+            }
+        }
+    }
+    .list-unstyled {
+        padding-top: 50px;
+        p {
+            @extend .p;
+        }
+        span {
+            color: $primaryColor;
+        }
+        .media {
+            border-bottom: 1px dashed $primaryColor;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+/*End menu*/
+/*Start reservation*/
+.reservation {
+    background-color: $secondaryColor;
+    h2 {
+        @extend .h2;
+        span {
+            color: #ffffff;
+        }
+    }
+    hr {
+        @extend .hr;
+    }
+    i {
+        @extend .i;
+    }
+    p {
+        @extend .p;
+        color: #ffffff;
+        padding: 30px 50px;
+    }
+    button {
+        @extend .button;
+        margin: 20px 0 80px;
+        
+        }
+}
+/*End reservation*/
+/*Sart gallery*/
+.gallery {
+    padding-bottom: 80px;
+    h2 {
+        @extend .h2;
+    }
+    hr {
+        @extend .hr;
+    }
+    i {
+        @extend .i;
+    }
+    ul {
+        padding-top: 60px;
+        li {
+            @extend .button;
+            display: inline-block;
+            background-color: #EEE;
+            margin: auto 10px;
+        }
+    }
+    .imgs {
+        img {
+        height: 90%;
+        width: 100%;
+        }
+    }
+
+}
+/*End gallery*/
+/*Start testimonial*/
+.testimonial {
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url(../img/vegetable-salad-on-white-ceramic-plate.png);
+        background-attachment: fixed;
+        padding-bottom: 100px;
+        position: relative;
+        .overlay {
+            @extend .overlay;
+        }
+        .test-contenu {
+            position: relative;
+            z-index: 3;
+            h2 {
+                @extend .h2;
+                span {
+                    color: #ffffff;
+                }
+            }
+            hr {
+                @extend .hr;
+            }
+            i {
+                @extend .i;
+            }
+            .carousel-item {
+                p {
+                    @extend .p;
+                    color: #ffffff;
+                    font-size: 20px;
+                    width: 70%;
+                    margin: 20px auto;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #ffffff;
+                }
+            }
+            .carousel-indicators {
+                position: absolute;
+                bottom: -60px;
+                li {
+                 height: 20px;
+                 width: 20px;
+                 border-radius: 50%;
+                 cursor: pointer;
+                }
+                .active {
+                 background-color: $primaryColor;
+                }
+             }
+        }
+}
+/*End testimonial*/
+/*Start subscription*/
+.subscription {
+    background-color: $primaryColor;
+    padding: 50px 0;
+    input {
+        width: 70%;
+        color: $secondaryColor;
+        border: none;
+        padding: 10px 20px;
+    }
+    button {
+        @extend .button;
+    }
+}
+/*End subscription*/
+/*Start Blog*/
+.blog {
+    background-color: #EEE;
+    padding-bottom: 50px;
+    h2 {
+        @extend .h2;
+    }
+    hr {
+        @extend .hr;
+    }
+    i {
+        @extend .i;
+    }
+    .col-md {
+        margin: 20px;
+    }
+    .card {
+        margin-top: 40px;
+        padding: 20px 0px;
+        .card-body {
+            p, span {
+                @extend .p;
+            }
+            .btn-primary {
+                @extend .button;
+            }
+        }
+    }
+    .btn-blog {
+        @extend .button;
+        border: 1px solid $secondaryColor;
+    }
+}
+/*End Blog*/
+/*Start Contact*/
+.contact {
+    padding-bottom: 50px;
+    .info-head {
+        padding-bottom: 50px;
+        h2 {
+            @extend .h2;
+        }
+        hr {
+            @extend .hr;
+        }
+        i {
+            @extend .i;
+        }
+    }
+    form {
+        label {
+            font-weight: bold;
+            color: $secondaryColor;
+            font-size: 18px;
+        }
+    }
+    button {
+        @extend .button;
+    }
+    .office {
+        padding:0 0 30px 30px;
+        color: $secondaryColor;
+        h3 {
+            color: $primaryColor;
+        }
+        p {
+            @extend .p;
+        }
+        i {
+            padding-right: 10px;
+        }
+    }
+    .hours {
+        padding-left: 30px;
+        h3 {
+            color: $primaryColor;
+        }
+        p {
+            @extend .p;
+        }
+    }
+}
+/*End Contact*/
+/*Start Footer*/
+.footer {
+    padding: 30px 0;
+    background-color: $secondaryColor;
+    i {
+        font-size: 30px;
+        color: #ffffff;
+        background-color: #696464;
+        padding: 5px;
+        height: 40px;
+        width: 50px;    
+        margin: 5px;
+        &:hover {
+            background-color: $primaryColor;
+            cursor: pointer;
+            @include Transition;
+        }
+    }
+    p {
+        @extend .p;
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+/*End Footer*/
+
+#scrollBtn {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    @extend .button;
+    display: none;
+}
+
+@import "media";

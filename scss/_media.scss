@@ -1,0 +1,99 @@
+
+
+@include sm {
+    /*Navbar*/
+    .navbar {
+        .navbar-nav {
+            li {
+                background-color: rgba($color: #000000, $alpha: 0.9);
+                text-align: center;
+            }
+        }
+    }
+    /*Slider*/
+    .slider {
+        .carousel-inner {
+            .carousel-caption {
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 15px;
+                    padding-bottom: 10px;
+                }
+                button {
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .carousel-indicators {
+            display: none;
+        }
+    }
+    /*About*/
+    .about {
+        h2 {
+            font-size: 2rem;
+        }
+        .statistique {
+            .item {
+                border-right: none;
+                h3, span {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    /*Menu*/
+    .menu {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    /*Reservation*/
+    .reservation {
+        text-align: center;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .gallery {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .testimonial {
+        .test-contenu {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+    .blog {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .contact {
+        .info-head {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@include xs {
+    .carousel-inner {
+        .carousel-caption {
+            button {
+                display: none;
+            }
+        }
+    }
+}
+
+@include md {
+    
+
+}

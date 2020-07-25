@@ -1,0 +1,62 @@
+.button{
+    background-color: #ffffff;
+    border: 2px solid $primaryColor;
+    padding: 10px 20px;
+    color: $primaryColor;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background-color: $primaryColor;
+        color: #ffffff;
+        @include Transition;
+    }
+}
+
+.h2 {
+    color: $primaryColor;
+    font-size: 3rem;
+    padding-top: 60px;
+    font-weight: bold;
+    span {
+        color: $secondaryColor;
+        font-family: $fontFamily;
+        font-weight: 300;
+    }
+}
+
+.overlay {
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+}
+
+.hr {
+    width: 100px;
+    height: 1px;
+    background-color: $primaryColor;
+    display: inline-block;
+    margin: auto 20px;
+}
+
+.i {
+    color: $primaryColor;
+}
+
+.p {
+    padding-top: 15px;
+    font-size: 15px;
+    color: $secondaryColor;
+    line-height: 1.56;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}

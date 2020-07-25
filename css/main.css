@@ -1,0 +1,360 @@
+.button, .slider .carousel-inner .carousel-caption button, .reservation button, .gallery ul li, .subscription button, .blog .card .card-body .btn-primary, .blog .btn-blog, .contact button, #scrollBtn {
+  background-color: #ffffff;
+  border: 2px solid #c1a35f;
+  padding: 10px 20px;
+  color: #c1a35f;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .button:hover, .slider .carousel-inner .carousel-caption button:hover, .reservation button:hover, .gallery ul li:hover, .subscription button:hover, .blog .card .card-body .btn-primary:hover, .blog .btn-blog:hover, .contact button:hover, #scrollBtn:hover {
+    background-color: #c1a35f;
+    color: #ffffff;
+    transition: .5s ease-in-out; }
+
+.h2, .about h2, .menu h2, .reservation h2, .gallery h2, .testimonial .test-contenu h2, .blog h2, .contact .info-head h2 {
+  color: #c1a35f;
+  font-size: 3rem;
+  padding-top: 60px;
+  font-weight: bold; }
+  .h2 span, .about h2 span, .menu h2 span, .reservation h2 span, .gallery h2 span, .testimonial .test-contenu h2 span, .blog h2 span, .contact .info-head h2 span {
+    color: #53514c;
+    font-family: "Tangerine", cursive;
+    font-weight: 300; }
+
+.overlay, .slider .overlay, .about .statistique .overlay, .testimonial .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2; }
+
+.hr, .about hr, .menu hr, .reservation hr, .gallery hr, .testimonial .test-contenu hr, .blog hr, .contact .info-head hr {
+  width: 100px;
+  height: 1px;
+  background-color: #c1a35f;
+  display: inline-block;
+  margin: auto 20px; }
+
+.i, .about i, .menu i, .reservation i, .gallery i, .testimonial .test-contenu i, .blog i, .contact .info-head i {
+  color: #c1a35f; }
+
+.p, .about .contenu p, .about .contenu ul li, .menu .list-unstyled p, .reservation p, .testimonial .test-contenu .carousel-item p, .blog .card .card-body p, .blog .card .card-body span, .contact .office p, .contact .hours p, .footer p {
+  padding-top: 15px;
+  font-size: 15px;
+  color: #53514c;
+  line-height: 1.56; }
+
+.overlay, .slider .overlay, .about .statistique .overlay, .testimonial .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+* {
+  box-sizing: border-box; }
+
+/*Start NavBar*/
+.grey {
+  background-color: black;
+  opacity: 0.8; }
+
+.navbar {
+  z-index: 999;
+  overflow: hidden;
+  position: fixed;
+  width: 100%; }
+  .navbar .navbar-brand {
+    border: 1px solid #c1a35f;
+    border-radius: 20px 0 20px 0;
+    padding: 10px; }
+    .navbar .navbar-brand span:first-of-type {
+      color: #c1a35f;
+      font-size: 40px;
+      font-weight: bold; }
+    .navbar .navbar-brand span:last-of-type {
+      color: #ffffff; }
+  .navbar .navbar-nav .active > .nav-link {
+    color: #c1a35f; }
+  .navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 15px;
+    color: #ffffff; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: #c1a35f;
+      transition: .5s ease-in-out; }
+
+/*End NavBar*/
+/*Start slider*/
+.slider .carousel-inner .carousel-item {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.slider .carousel-inner .carousel-caption {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  z-index: 3; }
+  .slider .carousel-inner .carousel-caption h1 {
+    font-size: 60px;
+    font-family: "Tangerine", cursive;
+    color: #c1a35f;
+    font-weight: bold; }
+  .slider .carousel-inner .carousel-caption p {
+    font-size: 20px;
+    padding-bottom: 30px; }
+
+.slider .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer; }
+
+.slider .carousel-indicators .active {
+  background-color: #c1a35f; }
+
+/*End slider*/
+/*Start about*/
+.about .contenu {
+  margin: 50px auto; }
+  .about .contenu ul li {
+    list-style: none;
+    padding-top: 0px; }
+    .about .contenu ul li::before {
+      font-family: 'FontAwesome';
+      content: "\f24d";
+      color: #c1a35f;
+      margin-right: 5px; }
+  .about .contenu img {
+    height: 80%;
+    width: 80%; }
+
+.about .statistique {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/selective-focus-photography-of-beef-steak-with-sauce.jpg);
+  background-attachment: fixed;
+  padding: 70px 0;
+  position: relative; }
+  .about .statistique .item {
+    border-right: 2px solid #ffffff;
+    color: #ffffff;
+    z-index: 3;
+    padding-bottom: 40px; }
+    .about .statistique .item:last-child {
+      border-right: none; }
+    .about .statistique .item sup {
+      top: -1.5em; }
+  .about .statistique h3, .about .statistique span {
+    font-size: 40px; }
+  .about .statistique h3 {
+    font-family: "Tangerine", cursive; }
+  .about .statistique span {
+    font-weight: bold; }
+
+/*End about*/
+/*Start menu*/
+.menu .nav-tabs {
+  padding-top: 40px;
+  border-bottom: 1px solid #c1a35f; }
+  .menu .nav-tabs .nav-item {
+    padding-left: 30px; }
+    .menu .nav-tabs .nav-item .nav-link {
+      border: 1px solid #c1a35f;
+      border-bottom: none;
+      color: #ffffff;
+      background-color: #c1a35f; }
+
+.menu .list-unstyled {
+  padding-top: 50px; }
+  .menu .list-unstyled span {
+    color: #c1a35f; }
+  .menu .list-unstyled .media {
+    border-bottom: 1px dashed #c1a35f; }
+    .menu .list-unstyled .media:last-child {
+      border-bottom: none; }
+
+/*End menu*/
+/*Start reservation*/
+.reservation {
+  background-color: #53514c; }
+  .reservation h2 span {
+    color: #ffffff; }
+  .reservation p {
+    color: #ffffff;
+    padding: 30px 50px; }
+  .reservation button {
+    margin: 20px 0 80px; }
+
+/*End reservation*/
+/*Sart gallery*/
+.gallery {
+  padding-bottom: 80px; }
+  .gallery ul {
+    padding-top: 60px; }
+    .gallery ul li {
+      display: inline-block;
+      background-color: #EEE;
+      margin: auto 10px; }
+  .gallery .imgs img {
+    height: 90%;
+    width: 100%; }
+
+/*End gallery*/
+/*Start testimonial*/
+.testimonial {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/vegetable-salad-on-white-ceramic-plate.png);
+  background-attachment: fixed;
+  padding-bottom: 100px;
+  position: relative; }
+  .testimonial .test-contenu {
+    position: relative;
+    z-index: 3; }
+    .testimonial .test-contenu h2 span {
+      color: #ffffff; }
+    .testimonial .test-contenu .carousel-item p {
+      color: #ffffff;
+      font-size: 20px;
+      width: 70%;
+      margin: 20px auto; }
+    .testimonial .test-contenu .carousel-item span {
+      font-weight: bold;
+      font-size: 20px;
+      color: #ffffff; }
+    .testimonial .test-contenu .carousel-indicators {
+      position: absolute;
+      bottom: -60px; }
+      .testimonial .test-contenu .carousel-indicators li {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        cursor: pointer; }
+      .testimonial .test-contenu .carousel-indicators .active {
+        background-color: #c1a35f; }
+
+/*End testimonial*/
+/*Start subscription*/
+.subscription {
+  background-color: #c1a35f;
+  padding: 50px 0; }
+  .subscription input {
+    width: 70%;
+    color: #53514c;
+    border: none;
+    padding: 10px 20px; }
+
+/*End subscription*/
+/*Start Blog*/
+.blog {
+  background-color: #EEE;
+  padding-bottom: 50px; }
+  .blog .col-md {
+    margin: 20px; }
+  .blog .card {
+    margin-top: 40px;
+    padding: 20px 0px; }
+  .blog .btn-blog {
+    border: 1px solid #53514c; }
+
+/*End Blog*/
+/*Start Contact*/
+.contact {
+  padding-bottom: 50px; }
+  .contact .info-head {
+    padding-bottom: 50px; }
+  .contact form label {
+    font-weight: bold;
+    color: #53514c;
+    font-size: 18px; }
+  .contact .office {
+    padding: 0 0 30px 30px;
+    color: #53514c; }
+    .contact .office h3 {
+      color: #c1a35f; }
+    .contact .office i {
+      padding-right: 10px; }
+  .contact .hours {
+    padding-left: 30px; }
+    .contact .hours h3 {
+      color: #c1a35f; }
+
+/*End Contact*/
+/*Start Footer*/
+.footer {
+  padding: 30px 0;
+  background-color: #53514c; }
+  .footer i {
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #696464;
+    padding: 5px;
+    height: 40px;
+    width: 50px;
+    margin: 5px; }
+    .footer i:hover {
+      background-color: #c1a35f;
+      cursor: pointer;
+      transition: .5s ease-in-out; }
+  .footer p {
+    color: #ffffff;
+    font-weight: bold; }
+
+/*End Footer*/
+#scrollBtn {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  display: none; }
+
+@media (max-width: 768px) {
+  /*Navbar*/
+  .navbar .navbar-nav li {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center; }
+  /*Slider*/
+  .slider .carousel-inner .carousel-caption h1 {
+    font-size: 40px; }
+  .slider .carousel-inner .carousel-caption p {
+    font-size: 15px;
+    padding-bottom: 10px; }
+  .slider .carousel-inner .carousel-caption button {
+    padding: 5px 10px; }
+  .slider .carousel-indicators {
+    display: none; }
+  /*About*/
+  .about h2 {
+    font-size: 2rem; }
+  .about .statistique .item {
+    border-right: none; }
+    .about .statistique .item h3, .about .statistique .item span {
+      font-size: 30px; }
+  /*Menu*/
+  .menu h2 {
+    font-size: 2rem; }
+  /*Reservation*/
+  .reservation {
+    text-align: center; }
+    .reservation h2 {
+      font-size: 2rem; }
+  .gallery h2 {
+    font-size: 2rem; }
+  .testimonial .test-contenu h2 {
+    font-size: 2rem; }
+  .blog h2 {
+    font-size: 2rem; }
+  .contact .info-head h2 {
+    font-size: 2rem; } }
+
+@media (max-width: 575px) {
+  .carousel-inner .carousel-caption button {
+    display: none; } }
