@@ -47,46 +47,62 @@
 /*End NavBar*/
 /*Start slider*/
 .slider {
-    .overlay {
-        @extend .overlay;
-    }    .carousel-inner {
+    .carousel-inner {
+        height: 100vh;
         .carousel-item {
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-        }
-        .carousel-caption {
-            position: absolute;
-            top: 30%;
-            text-align: center;
-            z-index: 3;
-            h1 {
-                font-size: 60px;
-                font-family: $fontFamily;
-                color:$primaryColor;
-                font-weight: bold;
-            }
-            p {
-                font-size: 20px;
-                padding-bottom: 30px;
-            }
-            button {
-                @extend .button;
+            .item {
+                position: absolute;
+                z-index: 3;
+                top: 30%;
+                width: 70%;
+                left: 15%;
+                h1 {
+                    font-size: 60px;
+                    font-family: $fontFamily;
+                    color:$primaryColor;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding-bottom: 30px;
+                }
+                button {
+                    @extend .button;
+                }
+            }  
+            .overlay {
+                @extend .overlay;
             }
         }
     }
     .carousel-indicators {
-       li {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        cursor: pointer;
-       }
-       .active {
-        background-color: $primaryColor;
-       }
+        li {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active {
+            background-color: $primaryColor;
+        }
     }
+    .slide-one {
+        background-image: url(../img/chef-preparing-vegetable-dish-on-tree-slab.jpg);
+        height: 100%;
+    }
+    .slide-two {
+        background-image: url(../img/variety-of-cooked-dishes.jpg);
+        height: 100%;
+    }
+    .slide-three {
+        background-image: url(../img/white-and-brown-cooked-dish-on-white-ceramic-bowls.jpg);
+        height: 100%;
+    }    
 }
 /*End slider*/
 /*Start about*/
@@ -246,7 +262,7 @@
             @extend .button;
             display: inline-block;
             background-color: #EEE;
-            margin: auto 10px;
+            margin: 10px 10px;
         }
     }
     .imgs {

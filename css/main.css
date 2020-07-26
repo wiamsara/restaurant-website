@@ -1,11 +1,11 @@
-.button, .slider .carousel-inner .carousel-caption button, .reservation button, .gallery ul li, .subscription button, .blog .card .card-body .btn-primary, .blog .btn-blog, .contact button, #scrollBtn {
+.button, .slider .carousel-inner .carousel-item .item button, .reservation button, .gallery ul li, .subscription button, .blog .card .card-body .btn-primary, .blog .btn-blog, .contact button, #scrollBtn {
   background-color: #ffffff;
   border: 2px solid #c1a35f;
   padding: 10px 20px;
   color: #c1a35f;
   text-transform: uppercase;
   cursor: pointer; }
-  .button:hover, .slider .carousel-inner .carousel-caption button:hover, .reservation button:hover, .gallery ul li:hover, .subscription button:hover, .blog .card .card-body .btn-primary:hover, .blog .btn-blog:hover, .contact button:hover, #scrollBtn:hover {
+  .button:hover, .slider .carousel-inner .carousel-item .item button:hover, .reservation button:hover, .gallery ul li:hover, .subscription button:hover, .blog .card .card-body .btn-primary:hover, .blog .btn-blog:hover, .contact button:hover, #scrollBtn:hover {
     background-color: #c1a35f;
     color: #ffffff;
     transition: .5s ease-in-out; }
@@ -20,7 +20,7 @@
     font-family: "Tangerine", cursive;
     font-weight: 300; }
 
-.overlay, .slider .overlay, .about .statistique .overlay, .testimonial .overlay {
+.overlay, .slider .carousel-inner .carousel-item .overlay, .about .statistique .overlay, .testimonial .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 100%;
@@ -43,7 +43,7 @@
   color: #53514c;
   line-height: 1.56; }
 
-.overlay, .slider .overlay, .about .statistique .overlay, .testimonial .overlay {
+.overlay, .slider .carousel-inner .carousel-item .overlay, .about .statistique .overlay, .testimonial .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 100%;
@@ -87,25 +87,28 @@
 
 /*End NavBar*/
 /*Start slider*/
-.slider .carousel-inner .carousel-item {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.slider .carousel-inner .carousel-caption {
-  position: absolute;
-  top: 30%;
-  text-align: center;
-  z-index: 3; }
-  .slider .carousel-inner .carousel-caption h1 {
-    font-size: 60px;
-    font-family: "Tangerine", cursive;
-    color: #c1a35f;
-    font-weight: bold; }
-  .slider .carousel-inner .carousel-caption p {
-    font-size: 20px;
-    padding-bottom: 30px; }
+.slider .carousel-inner {
+  height: 100vh; }
+  .slider .carousel-inner .carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    .slider .carousel-inner .carousel-item .item {
+      position: absolute;
+      z-index: 3;
+      top: 30%;
+      width: 70%;
+      left: 15%; }
+      .slider .carousel-inner .carousel-item .item h1 {
+        font-size: 60px;
+        font-family: "Tangerine", cursive;
+        color: #c1a35f;
+        font-weight: bold; }
+      .slider .carousel-inner .carousel-item .item p {
+        font-size: 20px;
+        color: #ffffff;
+        padding-bottom: 30px; }
 
 .slider .carousel-indicators li {
   height: 20px;
@@ -115,6 +118,18 @@
 
 .slider .carousel-indicators .active {
   background-color: #c1a35f; }
+
+.slider .slide-one {
+  background-image: url(../img/chef-preparing-vegetable-dish-on-tree-slab.jpg);
+  height: 100%; }
+
+.slider .slide-two {
+  background-image: url(../img/variety-of-cooked-dishes.jpg);
+  height: 100%; }
+
+.slider .slide-three {
+  background-image: url(../img/white-and-brown-cooked-dish-on-white-ceramic-bowls.jpg);
+  height: 100%; }
 
 /*End slider*/
 /*Start about*/
@@ -329,8 +344,6 @@
     padding-bottom: 10px; }
   .slider .carousel-inner .carousel-caption button {
     padding: 5px 10px; }
-  .slider .carousel-indicators {
-    display: none; }
   /*About*/
   .about h2 {
     font-size: 2rem; }
