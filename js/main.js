@@ -17,32 +17,30 @@ window.addEventListener('scroll', function() {
 });
 
 /*Button scroll to top*/
-var buttonScroll = document.getElementById('scrollBtn');
+$(document).ready(function(){
 
-window.addEventListener('scroll', function() {
+    $(window).scroll(function(){
 
-    if(window.scrollY > 40){
+        if($(this).scrollTop() > 40) {
 
-        buttonScroll.style.display = 'block';
+            $('#scrollBtn').fadeIn();
+
+        }
+
+        else {
+
+            $('#scrollBtn').fadeOut();
+
+        }
+
+    });
 
 
 
-    }
 
-    else {
-
-        buttonScroll.style.display = 'none';
-
-    }
-
-});
-
-buttonScroll.addEventListener('click', function(){
-
-    window.scrollTo(0,0);
-
-    setInterval('3s');
-
+    $('#scrollBtn').click(function(){
+        $('html, body').animate({scrollTop : 0}, 800);
+    });
 });
 
 /*add active class in the menu*/
